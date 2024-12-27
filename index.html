@@ -10,81 +10,101 @@
 
 <body>
   <main>
-    <!-- Hero  first page Section -->
-    <header class="h-screen w-full bg-cover bg-bottom bg-[url('bg.avif')] w-full">
-      <nav class="flex bg-[#E8F2F2] justify-between items-center w-full text-black px-4 py-2">
+    <!-- Hero Section -->
+    <header class="h-screen w-full bg-cover bg-bottom bg-[url('bg.avif')]">
+      <nav class="flex items-center justify-between w-full px-4 py-2 bg-[#E8F2F2] text-black">
+        <!-- Logo -->
         <div class="logo">
-          <h1 class="text-2xl font-bold text-xl:sm">DigiTech</h1>
+          <h1 class="text-2xl font-bold">DigiTech</h1>
         </div>
 
-        <div class="links flex items-center justify-between gap-6 text-xl font-normal">
-          <a href="#"> Home </a>
+       
+
+        <!-- Links -->
+        <div id="menu" class="hidden lg:flex flex-col lg:flex-row items-center gap-6 text-xl font-normal">
+          <a href="#">Home</a>
           <a href="#">About</a>
           <a href="#">Services</a>
           <a href="#">Products</a>
           <a href="#">Philosophy</a>
         </div>
 
+        <!-- Icons -->
         <div class="icons flex items-center gap-4">
           <i class="ri-instagram-line text-2xl"></i>
           <i class="ri-linkedin-fill text-2xl"></i>
           <i class="ri-github-fill text-2xl"></i>
           <button class="px-4 py-1 border-2 border-black rounded-xl">Get Started</button>
+          <button id="menu-toggle" class="block px-2 lg:hidden">
+            <i class="ri-menu-line text-xl"></i>
+          </button>
         </div>
+         <!-- Hamburger Menu -->
+     
       </nav>
+
       <section class="hero py-10 px-6 text-center">
-        <h1 class="text-4xl font-normal font-medium mb-4">Our Brand Design Philosophy</h1>
+        <h1 class="text-4xl font-medium mb-4">Our Brand Design Philosophy</h1>
         <p class="text-base">
           At DigiTech, we believe design is more than just an aesthetic; it's a powerful tool for storytelling, connection, and transformation. <br> Our philosophy is built around the idea that design should inspire, evoke emotions, and solve real-world problems. <br> Every project we undertake is a reflection of our core values: creativity, simplicity, and authenticity.
         </p>
       </section>
     </header>
-
-    <!-- Our Approach Section -->
-    <section class="py-20 px-6 text-center bg-gray-100">
-      <h2 class="text-3xl font-semibold mb-6">Our Approach</h2>
-      <p class="text-lg mb-4">We begin every project by listening to our clients and understanding their vision. Our team works collaboratively to shape ideas and bring them to life through thoughtful and intentional design.</p>
-      <p class="text-lg">From wireframes to the final design, we ensure that every step of the process aligns with the client's needs, ensuring clarity and creativity throughout the journey.</p>
+    <section class="hero py-10 px-6 text-center">
+      <h1 class="text-4xl font-normal font-medium mb-4">Our Brand Design Philosophy</h1>
+      <p class="text-base">
+        At DigiTech, we believe design is more than just an aesthetic; it's a powerful tool for storytelling, connection, and transformation. <br> Our philosophy is built around the idea that design should inspire, evoke emotions, and solve real-world problems. <br> Every project we undertake is a reflection of our core values: creativity, simplicity, and authenticity.
+      </p>
     </section>
+  </header>
 
-    <!-- Core Values Section -->
-    <section class="py-20 px-6 text-center bg-white">
-      <h2 class="text-3xl font-semibold mb-6">Core Values</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-        <div class="value-item">
-          <h3 class="text-xl font-bold mb-4">Creativity</h3>
-          <p>We thrive on innovative thinking, pushing the boundaries of what's possible and transforming ideas into visually stunning experiences.</p>
-        </div>
-        <div class="value-item">
-          <h3 class="text-xl font-bold mb-4">Simplicity</h3>
-          <p>We believe simplicity is the ultimate sophistication. Our designs are clean, minimal, and easy to navigate, ensuring a seamless experience.</p>
-        </div>
-        <div class="value-item">
-          <h3 class="text-xl font-bold mb-4">Authenticity</h3>
-          <p>We design with integrity. Our work reflects the true essence of your brand, aligning with your core values and resonating with your audience.</p>
-        </div>
+  <!-- Our Approach Section -->
+  <section class="py-20 px-6 text-center bg-gray-100">
+    <h2 class="text-3xl font-semibold mb-6">Our Approach</h2>
+    <p class="text-lg mb-4">We begin every project by listening to our clients and understanding their vision. Our team works collaboratively to shape ideas and bring them to life through thoughtful and intentional design.</p>
+    <p class="text-lg">From wireframes to the final design, we ensure that every step of the process aligns with the client's needs, ensuring clarity and creativity throughout the journey.</p>
+  </section>
+
+  <!-- Core Values Section -->
+  <section class="py-20 px-6 text-center bg-white">
+    <h2 class="text-3xl font-semibold mb-6">Core Values</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+      <div class="value-item">
+        <h3 class="text-xl font-bold mb-4">Creativity</h3>
+        <p>We thrive on innovative thinking, pushing the boundaries of what's possible and transforming ideas into visually stunning experiences.</p>
       </div>
-    </section>
+      <div class="value-item">
+        <h3 class="text-xl font-bold mb-4">Simplicity</h3>
+        <p>We believe simplicity is the ultimate sophistication. Our designs are clean, minimal, and easy to navigate, ensuring a seamless experience.</p>
+      </div>
+      <div class="value-item">
+        <h3 class="text-xl font-bold mb-4">Authenticity</h3>
+        <p>We design with integrity. Our work reflects the true essence of your brand, aligning with your core values and resonating with your audience.</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- Why Choose Us Section -->
-    <section class="py-20 px-6 text-center bg-gray-100">
-      <h2 class="text-3xl font-semibold mb-6">Why Choose Us</h2>
-      <p class="text-lg mb-4">Our design philosophy is centered around collaboration, creativity, and purpose. Here's why DigiTech is the right choice for your next project:</p>
-      <ul class="list-disc list-inside text-lg text-left mx-auto w-3/4">
-        <li>Expert designers with a keen eye for detail.</li>
-        <li>End-to-end solutions from concept to launch.</li>
-        <li>We deliver designs that create impact and drive results.</li>
-        <li>Customer satisfaction is our top priority, every step of the way.</li>
-      </ul>
-    </section>
+  <!-- Why Choose Us Section -->
+  <section class="py-20 px-6 text-center bg-gray-100">
+    <h2 class="text-3xl font-semibold mb-6">Why Choose Us</h2>
+    <p class="text-lg mb-4">Our design philosophy is centered around collaboration, creativity, and purpose. Here's why DigiTech is the right choice for your next project:</p>
+    <ul class="list-disc list-inside text-lg text-left mx-auto w-3/4">
+      <li>Expert designers with a keen eye for detail.</li>
+      <li>End-to-end solutions from concept to launch.</li>
+      <li>We deliver designs that create impact and drive results.</li>
+      <li>Customer satisfaction is our top priority, every step of the way.</li>
+    </ul>
+  </section>
 
-    <!-- Contact Us Section -->
-    <section class="py-20 px-6 text-center bg-white">
-      <h2 class="text-3xl font-semibold mb-6">Contact Us</h2>
-      <p class="text-lg mb-4">We’d love to hear from you! If you're ready to start your project or simply want to chat about your brand, reach out to us.</p>
-      <button class="px-6 py-3 bg-black text-white rounded-xl text-xl">Get In Touch</button>
-    </section>
-  </main>
+  <!-- Contact Us Section -->
+  <section class="py-20 px-6 text-center bg-white">
+    <h2 class="text-3xl font-semibold mb-6">Contact Us</h2>
+    <p class="text-lg mb-4">We’d love to hear from you! If you're ready to start your project or simply want to chat about your brand, reach out to us.</p>
+    <button class="px-6 py-3 bg-black text-white rounded-xl text-xl">Get In Touch</button>
+  </section>
+</main>
+
+
 </body>
 
 </html>
